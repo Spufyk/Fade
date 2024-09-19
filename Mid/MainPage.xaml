@@ -2,116 +2,133 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mid.MainPage"
-             BackgroundColor="#23212C">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black">
 
-    <VerticalStackLayout Padding="20" Spacing="15">
+    <ScrollView>
+            <Grid>
+                    <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+            
+                    <Image Source="show_do_milhao.png"
+                            Aspect="AspectFill"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
-        <!-- Pergunta -->
-        <Frame BackgroundColor="White" CornerRadius="20" Padding="15">
-            <Label Text="Pergunta X" 
-                   FontSize="20" 
-                   TextColor="Black" 
-                   HorizontalOptions="Center" 
-                   VerticalOptions="CenterAndExpand"/>
-        </Frame>
+                    <Label Text="Pergunta:" 
+                            TextColor="White" 
+                            FontSize="18"
+                            FontFamily="StalystaPersonal"
+                            Margin="10,5"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+                    
+                    <Frame BackgroundColor="Black"
+                            Margin="10,5"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3">
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nec dui sapien. Aenean in purus justo." 
+                                    TextColor="White" 
+                                    FontSize="14"
+                                    MaximumWidthRequest="500"
+                                    FontFamily="StalystaPersonal"/>
+                    </Frame>
 
-        <!-- Opções -->
-        <Grid ColumnDefinitions="40,*,10" RowSpacing="10" Padding="0">
-            <!-- Opção 1 -->
-            <Grid Row="0">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="1" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
+                    <Button Text="Praesent sit amet sollicitudin elit"
+                            x:Name="Resposta01"
+                            BackgroundColor="Black"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            Margin="10,5"
+                            TextColor="White"
+                            FontSize="12"
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+
+                    <Button Text="Donec in ante vel dui vehicula hendrerit"
+                            x:Name="Resposta02"
+                            BackgroundColor="Black"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            Margin="10,5"
+                            TextColor="White"
+                            FontSize="12"
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+                            
+                    <Button Text="Nulla tincidunt est eget sollicitudin dapibus"
+                            x:Name="Resposta03"
+                            BackgroundColor="Black"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            Margin="10,5"
+                            TextColor="White"
+                            FontSize="12"
+                            Grid.Row="5"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+                            
+                    <Button Text="Etiam imperdiet ex non lorem commodo, in porta nulla elementum"
+                            x:Name="Resposta04"
+                            BackgroundColor="Black"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            Margin="10,5"
+                            TextColor="White"
+                            FontSize="12"
+                            Grid.Row="6"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+                            
+                    <Button Text="Nunc posuere urna vitae felis feugiat, in lobortis nisi accumsan"
+                            x:Name="Resposta05"
+                            BackgroundColor="Black"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            Margin="10,5"
+                            TextColor="White"
+                            FontSize="12"
+                            Grid.Row="7"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
+
+                    <Button BackgroundColor="Black"
+                            ImageSource="right_arrow.png"
+                            TextColor="Black"
+                            Margin="10, 10, 5,10"
+                            Grid.Row="8"
+                            Grid.Column="0"/>
+                            
+                    <Button BackgroundColor="Black"
+                            TextColor="Black"
+                            Margin="5,10"
+                            Grid.Row="8"
+                            Grid.Column="1"/>
+                            
+                    <Button BackgroundColor="Black"
+                            TextColor="Black"
+                            Margin="5, 10, 10, 10"
+                            Grid.Row="8"
+                            Grid.Column="2"/>
             </Grid>
-
-            <!-- Opção 2 -->
-            <Grid Row="1">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="2" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
-
-            <!-- Opção 3 -->
-            <Grid Row="2">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="3" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
-
-            <!-- Opção 4 -->
-            <Grid Row="3">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="4" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
-
-            <!-- Opção 5 -->
-            <Grid Row="4">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="5" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
-        </Grid>
-
-        <!-- Botões -->
-        <HorizontalStackLayout Spacing="10">
-            <Button Text="Text"
-                    BackgroundColor="#F1F1D8"
-                    TextColor="Black"
-                    WidthRequest="100"
-                    CornerRadius="5"/>
-            <Button Text="Text"
-                    BackgroundColor="#F1F1D8"
-                    TextColor="Black"
-                    WidthRequest="100"
-                    CornerRadius="5"/>
-            <Button Text="Text"
-                    BackgroundColor="#F1F1D8"
-                    TextColor="Black"
-                    WidthRequest="100"
-                    CornerRadius="5"/>
-        </HorizontalStackLayout>
-
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
-
