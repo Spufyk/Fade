@@ -3,119 +3,160 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mid.MainPage"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="#23212C">
+             BackgroundColor="White">
 
-    <VerticalStackLayout Padding="20" Spacing="15">
-
-        <!-- Pergunta -->
-        <Frame BackgroundColor="White" CornerRadius="20" Padding="15">
-            <Label Text="Pergunta X" 
-                   FontSize="20" 
-                   TextColor="Black" 
-                   HorizontalOptions="Center" 
-                   VerticalOptions="CenterAndExpand"/>
-        </Frame>
-
-        <!-- Opções -->
-        <Grid ColumnDefinitions="40,*,10" RowSpacing="10" Padding="0">
+        <Grid>
                 <Grid.RowDefinitions>
-                        <RowDefinition/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-            <!-- Opção 1 -->
-            <Grid Row="0">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="1" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <!-- Opção 2 -->
-            <Grid Row="1">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="2" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
+                <Image Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Source="nu.png"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       Margin="0,25,0,0"/>
 
-            <!-- Opção 3 -->
-            <Grid Row="2">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="3" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
-                </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
 
-            <!-- Opção 4 -->
-            <Grid Row="3">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="4" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
+                <Frame Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       BackgroundColor="Black"
+                       CornerRadius="10"
+                       HeightRequest="50"
+                       Margin="10,0">
+                        <Label Text="Pontuação"
+                               TextColor="White"
+                               HorizontalOptions="Start"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"
+                               Margin="10,0,5,0"/>
                 </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
 
-            <!-- Opção 5 -->
-            <Grid Row="4">
-                <Frame BorderColor="Black" CornerRadius="30" HeightRequest="50" WidthRequest="50">
-                    <Label Text="5" 
-                           HorizontalOptions="Center" 
-                           VerticalOptions="Center" 
-                           FontSize="18"/>
+
+                <Frame Grid.Row="1"
+                       Grid.Column="2"
+                       BackgroundColor="Black"
+                       CornerRadius="10"
+                       HeightRequest="50"
+                       Margin="10,0">
+                        <Label Text="Nível:"
+                               TextColor="White"
+                               HorizontalOptions="Start"
+                               HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               FontSize="20"
+                               Margin="10,0"/>
                 </Frame>
-                <Label Text="Text" 
-                       Grid.Column="1" 
-                       VerticalOptions="Center" 
-                       FontSize="18" 
-                       TextColor="White"/>
-            </Grid>
+
+
+                <Frame Grid.Row="2"
+                       Grid.ColumnSpan="3"
+                       BackgroundColor="Black"
+                       CornerRadius="10"
+                       HeightRequest="100"
+                       Margin="10,0,10,10">
+                        <Label Text="Pergunta"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               VerticalOptions="CenterAndExpand"
+                               FontSize="20"
+                               Margin="10,0"/>
+                </Frame>
+
+
+                <Button Grid.Row="3"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 1"
+                        BackgroundColor="#9001d9"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Grid.Row="4"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 2"
+                        BackgroundColor="#9001d9"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Grid.Row="5"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 3"
+                        BackgroundColor="#9001d9"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Grid.Row="6"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 4"
+                        BackgroundColor="#9001d9"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Grid.Row="7"
+                        Grid.ColumnSpan="3"
+                        Text="Resposta 5"
+                        BackgroundColor="#9001d9"
+                        TextColor="White"
+                        HeightRequest="70"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+
+                <Button Grid.Column="0"
+                        Grid.Row="8"
+                        Text="Cartas"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+                <Button Grid.Column="1"
+                        Grid.Row="8"
+                        Text="Universitários"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
+                <Button Grid.Column="2"
+                        Grid.Row="8"
+                        Text="Tira Um"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="10"
+                        Margin="10,0"/>
+
         </Grid>
-
-        <!-- Botões -->
-        <HorizontalStackLayout Spacing="10">
-            <Button Text="Text"
-                    BackgroundColor="#F1F1D8"
-                    TextColor="Black"
-                    WidthRequest="100"
-                    CornerRadius="5"/>
-            <Button Text="Text"
-                    BackgroundColor="#F1F1D8"
-                    TextColor="Black"
-                    WidthRequest="100"
-                    CornerRadius="5"/>
-            <Button Text="Text"
-                    BackgroundColor="#F1F1D8"
-                    TextColor="Black"
-                    WidthRequest="100"
-                    CornerRadius="5"/>
-        </HorizontalStackLayout>
-
-    </VerticalStackLayout>
 </ContentPage>
 
