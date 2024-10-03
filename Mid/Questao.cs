@@ -34,7 +34,7 @@ public class Questao{
     }
 
     public void ConfiguraEstruturaDesenho (Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
-        LabelPergunta = labelpergunta;
+        LabelPergunta = labelPergunta;
         ButtonResposta1 = button1;
         ButtonResposta2 = button2;
         ButtonResposta3 = button3;
@@ -43,7 +43,7 @@ public class Questao{
     }
 
     public void Desenhar(){
-        LabelPergunta.Text = Pergunta;
+        labelPergunta.Text = Pergunta;
         ButtonResposta1.Text = Resposta1;
         ButtonResposta2.Text = Resposta2;
         ButtonResposta3.Text = Resposta3;
