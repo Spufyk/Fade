@@ -15,7 +15,7 @@ public class Gerenciador{
         var q1 = new Questao();
 
         q1.Pergunta = "Quanto é 2 + 2";
-        q1.Resposta1 = "Bolsonaro";
+        q1.Resposta1 = "Bolsonabo";
         q1.Resposta2 = "13";
         q1.Resposta3 = "4";
         q1.Resposta4 = "6";

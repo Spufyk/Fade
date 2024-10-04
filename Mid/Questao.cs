@@ -12,7 +12,7 @@ public class Questao{
     public int RespostaCerta;
     public int NivelResposta;
 
-    private Label LabelPergunta;
+    private Label labelPergunta;
 
     private Button ButtonResposta1;
     private Button ButtonResposta2;
@@ -24,8 +24,8 @@ public class Questao{
         
     }
 
-    public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
-        LabelPergunta = labelpergunta;
+    public Questao(Label labelPergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
+        this.labelPergunta = labelPergunta;
         ButtonResposta1 = button1;
         ButtonResposta2 = button2;
         ButtonResposta3 = button3;
@@ -33,8 +33,8 @@ public class Questao{
         ButtonResposta5 = button5;
     }
 
-    public void ConfiguraEstruturaDesenho (Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
-        LabelPergunta = labelPergunta;
+    public void ConfiguraEstruturaDesenho (Label labelPergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
+        this.labelPergunta = labelPergunta;
         ButtonResposta1 = button1;
         ButtonResposta2 = button2;
         ButtonResposta3 = button3;
