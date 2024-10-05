@@ -29,5 +29,19 @@ public partial class GamePage{
     void BtnResp05(object sender, EventArgs e){
         gerenciador.VerificaCorreta(5);
     }
+
+    void BtnCartas(object s, EventArgs e){
+    
+    }
+
+    void BtnUniversitarios(object s, EventArgs e)
+    {
+        
+    }
+
+    void BtnTiraum(object s, EventArgs e)
+    {
+        
+    }
 }
 

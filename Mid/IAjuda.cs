@@ -1,7 +1,7 @@
 using Mid;
 
 public abstract class IAjuda{
-    protected Button BtnResp01;          8=========================================================================================================================================================D
+    protected Button BtnResp01;
     protected Button BtnResp02;
     protected Button BtnResp03;
     protected Button BtnResp04;
@@ -17,7 +17,7 @@ public abstract class IAjuda{
     }
 
     public void ConfiguraEstruturaDesenho(Frame AjudaFrame){
-        this.labelAjuda = labelAjuda;.
+        this.labelAjuda = labelAjuda;
     }
 
     public abstract void RealizaAjuda(Questao questao);
